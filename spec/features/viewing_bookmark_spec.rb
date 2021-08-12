@@ -1,7 +1,7 @@
 feature 'Viewing bookmarks' do
   scenario 'visiting the index page' do
     visit('/')
-    expect(page).to have_content "this is a test page that work hopefully"
+    expect(page).to have_content "this is a test page that works hopefully"
   end
 end 
 

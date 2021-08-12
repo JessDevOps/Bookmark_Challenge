@@ -8,14 +8,15 @@ class Bookmark < Sinatra::Base
   end
 
   get '/' do
-    "this is a test page that work hopefully"
+    "this is a test page that works hopefully"
   end
 
   get '/bookmarks' do
-    @bookmarks = [
-      "https://airtable.com/shrJMn1quurUpejHI/tblU9M74TCpg89oGC?mode=week",
-      "https://github.com/makersacademy/course/blob/main/apprenticeship_module_outlines.md"
-    ]
+    # @bookmarks = [
+    #   "http://www.google.com",
+    #   "http://www.destroyallsoftware.com",
+    #   "http://www.makersacademy.com"
+    # ]
     @bookmarks = Bookmark.all
     erb :'bookmarks/index'
   end 

@@ -9,7 +9,7 @@ gem 'sinatra-contrib'
 gem 'capybara', group: :test
 gem 'rspec', group: :test
 gem 'pg'
-gem 'rubocop', require :false
+
 
 # gem "rails"
 
